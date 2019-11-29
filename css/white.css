@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "StratumNo1 Light";
+  src: url("/fonts/StratumNo1 Light.ttf") format("truetype");
+}
+
+:root {
+    --falcod-blue: rgba(0, 173, 239, 1);
+    --falcod-blue-dark: rgba(0, 142, 186, 1);
+    --falcod-blue-light: rgba(148, 217, 244, 1);
+    --falcod-blue-bkgd: rgba(0, 173, 239, .2);
+    --falcod-blue-bkgd-dark: rgba(0, 142, 186, .6);
+    --falcod-blue-bkgd-light: rgba(0, 173, 239, .5);
+    --falcod-orange: #EF5B2A;
+    --falcod-orange-dark: #DC3928;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #E6E6E6;
+}
+
+canvas {
+  position: fixed;
+  z-index: -1;
+}
+
+h1 {
+  font-family: "StratumNo1 Light", serif;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-family: "StratumNo1 Light", serif;
+  font-size: 2.75rem;
+  font-weight: bolder;
+}
+
+html {
+  font-size: 12pt;
+}
+
+nav {
+  /* nav bottem edge fade effect */
+  /*-webkit-box-shadow: 0px 18px 24px 20px #EF5B2A; 
+  box-shadow: 0px 18px 24px 20px #EF5B2A;*/
+  font-size: 1rem;
+}
+
+.blue {
+  color: var(--falcod-blue);
+}
+
+.cent {
+  position: absolute;
+  margin: 0 auto;
+}
+
+.falcod-pane {
+  background: var(--falcod-blue-bkgd-dark);
+  border: 1px solid var(--falcod-blue-light);
+  color: white;
+  font-family: "StratumNo1 Light", serif;
+  font-size: 1rem;
+  margin: 20px 0px 20px 0px;
+  padding: 20px 20px 20px 20px;
+}
+
+.falcod-pane img {
+  margin-bottom: 10px;
+}
+
+.falcod-pane-white {
+  background-color: #E6E6E6;
+  color: black;
+  padding: 15px 20px 15px 20px;
+}
+
+.orange {
+  color: var(--falcod-orange);
+}
+
+.subtitle {
+  font-family: "StratumNo1 Light", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+#content {
+  color: white;
+  margin: auto;
+  background: rgba(255, 255, 255, 0);
+  padding: 5px;
+  width: 64%;
+}
+
+#splash {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("/images/codeBlurred.jpg");
+  background-size: 100%;
+  height: 500px;
+}
+
+#splash-subtitle {
+  font-size: 1.35rem;
+  text-align: center;
+}
+
+#splash-text {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+}
+
+#splash-title {
+  text-align: center;
+}
+
+#wrapper {
+  /*background: var(--falcod-blue-bkgd);*/
+  margin-top: 50px;
+}
