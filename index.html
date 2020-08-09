@@ -1,57 +1,46 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Falcon Coders Template Testing</title>
+		<title>Falcon Coders</title>
 		<link href="./css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css" />
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>-->
-		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/bootstrap-4.3.1.js"></script>
 		<link href="./css/navbar.css" rel="stylesheet" type="text/css" />
 		<link href="./css/white.css" rel="stylesheet" type="text/css" />
 		<script src="./js/rain.js"></script>
+
 	</head>
 	<body>
 		<canvas id="c"></canvas>
-		<nav class="fixed-top navbar navbar-default navbar-expand-lg" id="header" role="navigation">
-			<a class="navbar-brand" href="/">
-				<!--<img src="../images/logo.png" width="150px" />-->
-				<span id="nav-title">Falcon Coders</span>
-			</a>
-			<div class="collapse navbar-collapse" id="navbarText">
-			    <ul class="navbar-nav mr-auto">
-			    	<li class="nav-item">
-			    		<a class="nav-link active" href="./index.html">Home</a>
-		    		</li>
-		    		<li class="nav-item">
-			    		<a class="nav-link active" href="#">About</a>
-		    		</li>
-		    		<li class="nav-item">
-			    		<a class="nav-link active" href="./projects.html">Projects</a>
-		    		</li>
-		    		<li class="nav-item">
-			    		<a class="nav-link active" href="./members.html">Members</a>
-		    		</li>
-		    		<li class="nav-item">
-			    		<a class="nav-link active" href="#">Contact Us</a>
-		    		</li>
-				</ul>
-
-				<!-- displays on the right -->
-				<ul class="navbar-nav ml-auto">
-		            <button class="btn" id="btn" type="button">Click me!</button>
-		        </ul>
-			</div>
+		<nav class="fixed-top" id="header">
+		    <div class="row" style="margin: 10px;">
+		        <div class="col-sm-5" style="position: relative;">
+		            <div id="header-btns">
+						<a class="header-btn" href="./index.html">Home</a>
+		                <a class="header-btn" href="./about.html">About</a>
+		                <a class="header-btn" href="./projects.html">Projects</a>
+		                <a class="header-btn" href="./contact.html">Contact Us</a>
+		            </div>
+		        </div>
+		        <div class="col-sm-2" style="text-align: center;">
+		            <img src="./images/logo_white.png" width="150px" />
+		        </div>
+		        <div class="col-sm-5" style="text-align: right;">
+		            <!--<button class="btn" id="btn" type="button">Click me!</button>-->
+		        </div>
+		    </div>
 		</nav>
 
 		<!-- page body -->
 		<div id="wrapper">
 			<div id="content">
-				
+
 				<!-- splash image and banner -->
 				<div class="falcod-pane" id="splash">
 					<div id="splash-text">
-						<h1 id="splash-title">Forging the Air Force of the Future</h1>
+						<h1 id="splash-title">Forging the Military of the Future</h1>
 						<div class="subtitle" id="splash-subtitle">Creating <span class="blue">programmers</span> & <span class="orange">software</span> tools that keep us one step ahead</div>
 					</div>
 				</div>
@@ -66,20 +55,94 @@
 						</div>
 					</div>
 				</div>-->
+				<div class="row">
+					<div class="col-sm-8" style="padding-right: 10px;">
+						<div class="falcod-pane">
+							<h3 style="font-weight: bold; padding-bottom: 8px;">Latest Announcements</h3>
+							<div id="announcements">
+								<div class="announcement">
+									<h6 class="announcement-timestamp">2020-07-19@18:37:32</h6>
+									<p class="announcement-body">Lorem ipsum poopcock stinktoe monkey boy blah skrrrt pop pop poop grub toot.</p>
+								</div>
+								<hr />
+								<div class="announcement">
+									<h6 class="announcement-timestamp">2020-07-19@18:37:32</h6>
+									<p class="announcement-body">Lorem ipsum poopcock stinktoe monkey boy blah skrrrt pop pop poop grub toot.</p>
+								</div>
+								<hr />
+								<div class="announcement">
+									<h6 class="announcement-timestamp">2020-07-19@18:37:32</h6>
+									<p class="announcement-body">Lorem ipsum poopcock stinktoe monkey boy blah skrrrt pop pop poop grub toot.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4" style="padding-left: 10px;">
+						<div class="falcod-pane" style="height: calc(100% - 20px)">
+							<h3 style="font-weight: bold;">Quick Links</h3>
+							<div><a href="https://drive.google.com/drive/u/1/folders/0AIKZVa3-5ciZUk9PVA">Shared Drive</a></div>
+							<div><a href="https://falcon-coders.atlassian.net/projects">Jira</a></div>
+							<div><a href="https://falcon-coders.atlassian.net/projects">Slack channel</a></div>
+							<div><a href="https://falcon-coders.atlassian.net/projects">Discord server</a></div>
+						</div>
+					</div>
+				</div>
+				<!--<div class="falcod-pane">
+					<h2>Schedule</h2>
+					<div style="width: 100%; height: 150px; background-color: white;">
+						<div class="row">
+							<div class="col-sm orange">Sun</div>
+							<div class="col-sm orange">Mon</div>
+							<div class="col-sm orange">Tue</div>
+							<div class="col-sm orange">Wed</div>
+							<div class="col-sm orange">Thu</div>
+							<div class="col-sm orange">Fri</div>
+							<div class="col-sm orange">Sat</div>
+						</div>
+					</div>
+				</div>-->
 				<div class="falcod-pane">
-					<div class="row">
-						<div class="col-sm-6">
+					<div class="row" style="margin: 0;">
+						<div class="col-sm-6" style="padding-right: 20px;">
 							<h2>Mentorship</h2>
 							<div class="subtitle">Equipping the Military of the Future</div>
-							<p>We endeavour to give our military members the skills and knowledge they need to fight and win on an increasingly digital warfront. Our goal is to make Fort Gordon's service members the most technologically savvy in the Department of Defense. To accomplish that, we have created a program dedicated to teaching and mentoring programmers to hone their craft into an art form.</p>
+							<p>We endeavour to give our military members and civilians the skills and knowledge they need to fight and win on an increasingly digital warfront. Our goal is to make Fort Gordon's service members the most technologically savvy in the Department of Defense. To accomplish that, we have created a program dedicated to teaching and mentoring programmers to hone their craft into an art form.</p>
+							<p>Members gain hands-on experience working on real-world projects that help the community, put together short presentations on coding topics, and participate in puzzles, like Capture the Flags (CTFs), that challenge their skills.</p>
 						</div>
-						<div class="col-sm-6 falcod-pane-white">
-							<h2 class="orange">Projects</h2>
-							<div class="orange subtitle">Applying Our Skills</div>
+						<div class="col-sm-6">
+							<img src="./images/whiteboard.jpeg" width="100%" style="margin: 0;" />
+						</div>
+					</div>
+				</div>
+				<div class="falcod-pane">
+					<div class="row" style="margin: 0;">
+						<div class="col-sm-6">
+							<img src="./images/code.png" style="margin: 0;" width="100%" />
+						</div>
+						<div class="col-sm-6" style="padding-left: 20px;">
+							<h2>Projects</h2>
+							<div class="subtitle">Applying Our Skills</div>
 							<p>As a community of skilled programmers, we are uniquely able to supply other organizations on Fort Gordon and in the local community with software development and consultancy talent that can meet their needs when such talent is unavailable internally. We have lent our skills to developing software projects across multiple domains for such organizations as Army Community Service, the Air Force Sergeants Association, and the Society of Air Force Psychologists, to name a few.</p>
 						</div>
 					</div>
 				</div>
+				<div style="padding-bottom: 80px; padding-top: 60px;">
+					<h1 class="orange" style="text-align: center;">Join Us!</h1>
+					<h5 style="color: black; text-align: center;">Have an interest in computer science and want to become a better programmer? Are you located on or near Fort Gordon? Join Falcon Coders today! We are a network of programmers and software developers in Augusta, GA dedicated to improving ourselves and our community.</h5>
+				</div>
+				<div class="falcod-pane">
+					<iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23F4511E&amp;ctz=America%2FNew_York&amp;src=Z2xlYm9uQGZhbGNvbmNvZGVycy5vcmc&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19ibHBuOGliYXNrdjcxbDBra21zbzltMGJtMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%237CB342&amp;color=%230B8043" style="border:solid 1px #777" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<footer id="footer">
+				    <hr />
+				    <h3 class="orange" style="font-weight: bold;">Falcon Coders</h3>
+				    <div><a href="/">Home</a></div>
+				    <div><a href="/about">About</a></div>
+				    <div><a href="/about">Projects</a></div>
+				    <div><a href="/about">Members</a></div>
+				    <div><a href="/about">Contact Us</a></div>
+				</footer>
+
 			</div>
 		</div>
 	</body>

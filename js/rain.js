@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	$('#wrapper').css('margin-top', ($('#header').outerHeight(true) + 20) + 'px');
+
 	var interval,
 		c = document.getElementById("c"),
 		ctx = c.getContext("2d");
@@ -32,7 +34,7 @@ $(document).ready(function() {
 		//ctx.fillStyle = "rgba(255, 255, 255, 0.075";
 		//ctx.fillStyle = "rgba(0, 173, 239, 0.005)";
 		ctx.fillRect(0, 0, c.width, c.height);
-		
+
 		ctx.fillStyle = "#e89300"; // orange text
 		//ctx.fillStyle = "#008fd1"; // blue text
 		ctx.font = font_size + "px arial";
@@ -42,13 +44,13 @@ $(document).ready(function() {
 			//a random chinese character to print
 			var text = chars[Math.floor(Math.random() * chars.length)];
 			ctx.fillText(text, i * font_size, drops[i] * font_size);
-			
+
 			// sending the drop back to the top randomly after it has crossed the screen
 			// adding a randomness to the reset to make the drops scattered on the Y axis
 			if(drops[i] * font_size > c.height && Math.random() > 0.975) {
 				drops[i] = 0;
 			}
-			
+
 			//incrementing Y coordinate
 			drops[i]++;
 		}

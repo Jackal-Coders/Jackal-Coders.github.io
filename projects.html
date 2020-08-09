@@ -2,150 +2,132 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Falcon Coders Template Testing</title>
-		<%-
-			include('../../partials/resources');
-		%>
-		<link href="/css/white/navbar.css" rel="stylesheet" type="text/css" />
-		<link href="/css/white/white.css" rel="stylesheet" type="text/css" />
-		<script src="/js/rain.js"></script>
+		<link href="./css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css" />
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>-->
+		<script src="./js/bootstrap-4.3.1.js"></script>
+		<link href="./css/navbar.css" rel="stylesheet" type="text/css" />
+		<link href="./css/white.css" rel="stylesheet" type="text/css" />
+		<script src="./js/rain.js"></script>
 	</head>
 	<body>
 		<canvas id="c"></canvas>
-		<nav class="fixed-top navbar navbar-default navbar-expand-lg" id="header" role="navigation">
-			<a class="navbar-brand" href="/">
-				<!--<img src="../images/logo.png" width="150px" />-->
-				<span id="nav-title">Falcon Coders</span>
-			</a>
-			<div class="collapse navbar-collapse" id="navbarText">
-			    <ul class="navbar-nav mr-auto">
-			    	<li class="nav-item">
-			    		<a class="nav-link active" href="/">Home</a>
-		    		</li>
-		    		<li class="nav-item">
-			    		<a class="nav-link active" href="/gradient">About</a>
-		    		</li>
-		    		<li class="nav-item">
-			    		<a class="nav-link active" href="/projects">Projects</a>
-		    		</li>
-		    		<li class="nav-item">
-			    		<a class="nav-link active" href="/#">Contact Us</a>
-		    		</li>
-				</ul>
-
-				<!-- displays on the right -->
-				<ul class="navbar-nav ml-auto">
-		            <button class="btn" id="btn" type="button">Click me!</button>
-		        </ul>
-			</div>
+		<nav class="fixed-top" id="header">
+		    <div class="row" style="margin: 10px;">
+		        <div class="col-sm-5" style="position: relative;">
+		            <div id="header-btns">
+						<a class="header-btn" href="./index.html">Home</a>
+		                <a class="header-btn" href="./about.html">About</a>
+		                <a class="header-btn" href="./projects.html">Projects</a>
+		                <a class="header-btn" href="./contact.html">Contact Us</a>
+		            </div>
+		        </div>
+		        <div class="col-sm-2" style="text-align: center;">
+		            <img src="./images/logo_white.png" width="150px" />
+		        </div>
+		        <div class="col-sm-5" style="text-align: right;">
+		            <!--<button class="btn" id="btn" type="button">Click me!</button>-->
+		        </div>
+		    </div>
 		</nav>
+
 		<!-- page body -->
 		<div id="wrapper">
 			<div id="content">
-				<h2>Projects</h2>
-				<hr />
-
-				<!-- projects in development -->
-				<!--<h4>In Development:</h4>-->
-				<table>
-					<thead>
-						<th>Name</th>
-						<th>SDLC Phase</th>
-						<th>Lead</th>
-						<th>Developers</th>
-						<th>Start Date</th>
-						<th>Status</th>
-					</thead>
-					<tbody>
-						<tr>
-							<td>KTANE Mod</td>
-							<td>Development/Implementation</td>
-							<td>Beck</td>
-							<td style="color: red;">Lebon</td>
-							<td>??? 2018</td>
-							<td>Ongoing</td>
-						</tr>
-						<tr>
-							<td>Bullet Editor</td>
-							<td>Requirement Analysis</td>
-							<td>Lebon</td>
-							<td style="color: green;">Douglas, Butler</td>
-							<td>??? 2018</td>
-							<td>Ongoing</td>
-						</tr>
-						<tr>
-							<td>ACS Budget App</td>
-							<td>Development/Implementation</td>
-							<td>Lebon</td>
-							<td style="color: green;">Douglas, Butler</td>
-							<td>Jul 2019</td>
-							<td>Ongoing</td>
-						</tr>
-						<tr>
-							<td>AFSA Site</td>
-							<td>Development/Implementation</td>
-							<td>Douglas</td>
-							<td style="color: green;">Butler, Impson</td>
-							<td>Jul 2019</td>
-							<td>Ongoing</td>
-						</tr>
-						<tr>
-							<td>SAFP Smartphone App</td>
-							<td>Requirement Analysis</td>
-							<td>Joel</td>
-							<td style="color: green;">Lebon, Beck</td>
-							<td>Sep 2019</td>
-							<td>Ongoing</td>
-						</tr>
-						<tr>
-							<td>Hebrew Database</td>
-							<td>Planning/Design</td>
-							<td>Lebon</td>
-							<td style="color: green;">Hundley</td>
-							<td>??? 2019</td>
-							<td>Ongoing</td>
-						</tr>
-						<tr>
-							<td>FalCod Website</td>
-							<td>Planning/Design</td>
-							<td>Lebon</td>
-							<td style="color: green;">Douglas</td>
-							<td>Sep 2019</td>
-							<td>Ongoing</td>
-						</tr>
-						<tr>
-							<td>Solidworks API</td>
-							<td>Development/Implementation</td>
-							<td>Stoneback</td>
-							<td style="color: green;"></td>
-							<td>??? 2018</td>
-							<td>UNK</td>
-						</tr>
-						<tr>
-							<td>Broadhead Script</td>
-							<td>N/A</td>
-							<td>Wise</td>
-							<td style="color: green;"></td>
-							<td>??? 2019</td>
-							<td>Complete</td>
-						</tr>
-						<tr>
-							<td>Douglas Scripts</td>
-							<td>N/A</td>
-							<td>Douglas</td>
-							<td style="color: green;"></td>
-							<td>??? 2019</td>
-							<td>Complete</td>
-						</tr>
-						<tr>
-							<td>CAA Access DB</td>
-							<td>N/A</td>
-							<td>Lebon</td>
-							<td style="color: green;"></td>
-							<td>Dec 2018</td>
-							<td>Failed</td>
-						</tr>
-					</tbody>
-				</table>
+				<div id="page_content">
+					<h2 style="color: #4f4f4f;">Projects</h2>
+					<hr />
+					<div class="paragraphs">
+						<p>Falcon Coders has done some great work for a number of public and private organizations! These projects cover a wide variety of platforms and technologies, showcasing the diversity of talent we have. Check out a small sampling of our work here.</p>
+					</div>
+					<br />
+					<div class="falcod-pane">
+						<div class="row" style="margin: 0;">
+							<div class="col-sm-6">
+								<img src="./images/code.png" style="margin: 0;" width="100%" />
+							</div>
+							<div class="col-sm-6" style="padding-left: 20px;">
+								<h2>Rosetta Bomb</h2>
+								<p>Rosetta Bomb is a mod for the popular virtual reality game Keep Talking and Nobody Explodes (KTANE) that we are currently developing. It is designed to make learning and practicing language skills more effective while also making it more fun! KTANE is designed to be fun but making it a valuable learning tool for linguists has required some creativity in designing fruitful activities for players that work within the game. Development has been done in the C# programming language for the Unity Game Engine.</p>
+							</div>
+						</div>
+					</div>
+					<div class="falcod-pane">
+						<div class="row" style="margin: 0;">
+							<div class="col-sm-6" style="padding-right: 20px;">
+								<h2>AFSA Website</h2>
+								<p>As a community of skilled programmers, we are uniquely able to supply other organizations on Fort Gordon and in the local community with software development and consultancy talent that can meet their needs when such talent is unavailable internally. We have lent our skills to developing software projects across multiple domains for such organizations as Army Community Service, the Air Force Sergeants Association, and the Society of Air Force Psychologists, to name a few.</p>
+							</div>
+							<div class="col-sm-6">
+								<img src="./images/whiteboard.jpeg" width="100%" style="margin: 0;" />
+							</div>
+						</div>
+					</div>
+					<!-- projects in development -->
+					<!--<h4>In Development:</h4>-->
+					<!--<table>
+						<thead>
+							<th>Name</th>
+							<th>SDLC Phase</th>
+							<th>Lead</th>
+							<th>Developers</th>
+							<th>Start Date</th>
+							<th>Status</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Bullet Editor</td>
+								<td>Requirement Analysis</td>
+								<td>Lebon</td>
+								<td style="color: green;">Douglas, Butler</td>
+								<td>??? 2018</td>
+								<td>Ongoing</td>
+							</tr>
+							<tr>
+								<td>ACS Budget App</td>
+								<td>Development/Implementation</td>
+								<td>Lebon</td>
+								<td style="color: green;">Douglas, Butler</td>
+								<td>Jul 2019</td>
+								<td>Ongoing</td>
+							</tr>
+							<tr>
+								<td>AFSA Site</td>
+								<td>Development/Implementation</td>
+								<td>Douglas</td>
+								<td style="color: green;">Butler, Impson</td>
+								<td>Jul 2019</td>
+								<td>Ongoing</td>
+							</tr>
+							<tr>
+								<td>SAFP Smartphone App</td>
+								<td>Requirement Analysis</td>
+								<td>Joel</td>
+								<td style="color: green;">Lebon, Beck</td>
+								<td>Sep 2019</td>
+								<td>Ongoing</td>
+							</tr>
+							<tr>
+								<td>FalCod Website</td>
+								<td>Planning/Design</td>
+								<td>Lebon</td>
+								<td style="color: green;">Douglas</td>
+								<td>Sep 2019</td>
+								<td>Ongoing</td>
+							</tr>
+						</tbody>
+					</table>-->
+				</div>
+				<footer id="footer">
+				    <hr />
+				    <h3 class="orange" style="font-weight: bold;">Falcon Coders</h3>
+				    <div><a href="/">Home</a></div>
+				    <div><a href="/about">About</a></div>
+				    <div><a href="/about">Projects</a></div>
+				    <div><a href="/about">Members</a></div>
+				    <div><a href="/about">Contact Us</a></div>
+				</footer>
 			</div>
 		</div>
 	</body>
