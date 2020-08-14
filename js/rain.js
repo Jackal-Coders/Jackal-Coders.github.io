@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('#wrapper').css('margin-top', ($('#header').outerHeight(true) + 20) + 'px');
+	//$('#wrapper').css('margin-top', ($('#header').outerHeight(true) + 20) + 'px');
 
 	var interval,
 		c = document.getElementById("c"),

@@ -3,6 +3,20 @@
   src: url("../fonts/StratumNo1 Light.ttf") format("truetype");
 }
 
+@media only screen and (max-width: 768px) {
+    #content {
+        width: 100%;
+        padding: 0px 16px 0px 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #content {
+        width: 64%;
+    }
+}
+
+
 :root {
     --falcod-blue: rgba(0, 173, 239, 1);
     --falcod-blue-dark: rgba(0, 142, 186, 1);
@@ -170,10 +184,9 @@ footer > div > a:hover {
 }
 
 #content {
-  color: white;
-  margin: auto;
-  background: rgba(255, 255, 255, 0);
-  width: 64%;
+    color: white;
+    margin: auto;
+    background: rgba(255, 255, 255, 0);
 }
 
 #header {
