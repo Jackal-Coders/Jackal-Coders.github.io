@@ -15,24 +15,26 @@
     </head>
     <body>
         <canvas id="c"></canvas>
-        <nav class="fixed-top" id="header">
-		    <div class="row" style="margin: 10px;">
-		        <div class="col-sm-5" style="position: relative;">
-		            <div id="header-btns">
-		                <a class="header-btn" href="./index.html">Home</a>
-		                <a class="header-btn" href="./about.html">About</a>
-		                <a class="header-btn" href="./projects.html">Projects</a>
-		                <a class="header-btn" href="./contact.html">Contact Us</a>
-		            </div>
-		        </div>
-		        <div class="col-sm-2" style="text-align: center;">
-		            <img src="./images/logo_white.png" width="150px" />
-		        </div>
-		        <div class="col-sm-5" style="text-align: right;">
-		            <!--<button class="btn" id="btn" type="button">Click me!</button>-->
-		        </div>
-		    </div>
+        <nav id="header">
+			<a class="brand" href="./index.html">
+				<img src="./images/logo_white.png" width="150px" />
+			</a>
+			<img id="hamburger" onclick="openNav()" src="./images/hamburger.svg" width="24px" />
+			<ul id="menu">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./projects.html">Projects</a></li>
+				<li><a href="./contact.html">Contact Us</a></li>
+			</ul>
 		</nav>
+
+        <div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="./index.html">Home</a>
+			<a href="./about.html">About</a>
+			<a href="./projects.html">Projects</a>
+			<a href="./contact.html">Contact Us</a>
+		</div>
 
 		<!-- page body -->
 		<div id="wrapper">
@@ -71,3 +73,14 @@
         </div>
     </body>
 </html>
+<script>
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>

@@ -10,78 +10,30 @@
 		<script src="./js/bootstrap-4.3.1.js"></script>
 		<link href="./css/navbar.css" rel="stylesheet" type="text/css" />
 		<link href="./css/white.css" rel="stylesheet" type="text/css" />
-		<style>
-			.navbar {
-				/*position: relative;*/
-				height: 53px;
-			}
-			.brand {
-				position: absolute;
-				left: 50%;
-				margin-left: -75px !important;  /* 50% of your logo width */
-				display: block;
-			}
-			.navbar-toggler {
-				position: absolute;
-				right: 5%;
-				top: 0%;
-			}
-			@media only screen and (max-width: 768px) {
-				.brand {
-					margin-top: -20px;
-				}
-				#left-image-header {
-					padding-top: 12px;
-				}
-			}
-			@media only screen and (min-width: 768px) {
-				.brand {
-					margin-top: -20px;
-				}
-				#announcements-wrapper {
-					padding-right: 10px;
-				}
-				#left-image {
-					padding-left: 20px;
-				}
-				#links-wrapper {
-					padding-left: 10px;
-				}
-				#right-image {
-					padding-right: 20px;
-				}
-			}
-		</style>
 		<script src="./js/rain.js"></script>
 	</head>
 	<body>
 		<canvas id="c"></canvas>
-		<nav class="fixed-top navbar navbar-dark navbar-expand-lg" id="header">
-		    <div class="row" style="margin: 10px;">
-		        <!--<div class="col-sm-5" style="position: relative;">-->
-					<a class="brand" href="./index.html">
-						<img src="./images/logo_white.png" width="150px" />
-					</a>
-					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			            <div id="header-btns">
-							<a class="header-btn" href="./index.html">Home</a>
-			                <a class="header-btn" href="./about.html">About</a>
-			                <a class="header-btn" href="./projects.html">Projects</a>
-			                <a class="header-btn" href="./contact.html">Contact Us</a>
-			            </div>
-					</div>
-		        <!--</div>-->
-		        <!--<div class="col-sm-2" style="text-align: center;">-->
-
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-		        <!--</div>
-		        <div class="col-sm-5" style="text-align: right;">-->
-		            <!--<button class="btn" id="btn" type="button">Click me!</button>-->
-		        <!--</div>-->
-		    </div>
+		<nav id="header">
+			<a class="brand" href="./index.html">
+				<img src="./images/logo_white.png" width="150px" />
+			</a>
+			<img id="hamburger" onclick="openNav()" src="./images/hamburger.svg" width="24px" />
+			<ul id="menu">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./projects.html">Projects</a></li>
+				<li><a href="./contact.html">Contact Us</a></li>
+			</ul>
 		</nav>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="./index.html">Home</a>
+			<a href="./about.html">About</a>
+			<a href="./projects.html">Projects</a>
+			<a href="./contact.html">Contact Us</a>
+		</div>
 
 		<!-- page body -->
 		<div id="wrapper">
@@ -197,3 +149,14 @@
 		</div>
 	</body>
 </html>
+<script>
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
